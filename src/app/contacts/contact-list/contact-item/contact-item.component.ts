@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
-
+import { Component, Input} from '@angular/core';
 import { Contact } from '../../contact-list.model';
+
+
 @Component({
   selector: 'app-contact-item',
   templateUrl: './contact-item.component.html',
@@ -8,7 +9,7 @@ import { Contact } from '../../contact-list.model';
 })
 export class ContactItemComponent {
 
- contact!: Contact;
+ @Input() contact!: Contact;
 
   constructor() {}
 
