@@ -8,6 +8,14 @@ import { ContactDetailComponent } from './contacts/contact-detail/contact-detail
 import { ContactListComponent } from './contacts/contact-list/contact-list.component';
 import { HeaderComponent } from './header/header.component';
 import { ContactItemComponent } from './contacts/contact-list/contact-item/contact-item.component';
+import { DocumentsComponent } from './documents/documents.component';
+import { MessagesComponent } from './messages/messages.component';
+import { DocumentDetailComponent } from './documents/document-detail/document-detail.component';
+import { DocumentListComponent } from './documents/document-list/document-list.component';
+import { MessageListComponent } from './messages/message-list/message-list.component';
+import { MessageEditComponent } from './messages/message-edit/message-edit.component';
+import { MessageItemComponent } from './messages/message-item/message-item.component';
+import { MessagesEditComponent } from './messages/message-list/messages-edit/messages-edit.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +24,15 @@ import { ContactItemComponent } from './contacts/contact-list/contact-item/conta
     ContactsComponent,
     ContactDetailComponent,
     ContactListComponent,
-    ContactItemComponent
+    ContactItemComponent,
+    DocumentsComponent,
+    MessagesComponent,
+    DocumentDetailComponent,
+    DocumentListComponent,
+    MessageListComponent,
+    MessageEditComponent,
+    MessageItemComponent,
+    MessagesEditComponent
   ],
   imports: [
     BrowserModule
