@@ -15,7 +15,8 @@ import { DocumentListComponent } from './documents/document-list/document-list.c
 import { MessageListComponent } from './messages/message-list/message-list.component';
 import { MessageEditComponent } from './messages/message-edit/message-edit.component';
 import { MessageItemComponent } from './messages/message-item/message-item.component';
-import { MessagesEditComponent } from './messages/message-list/messages-edit/messages-edit.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DocumentItemComponent } from './documents/document-item/document-item.component';
 
 @NgModule({
   declarations: [
@@ -32,10 +33,11 @@ import { MessagesEditComponent } from './messages/message-list/messages-edit/mes
     MessageListComponent,
     MessageEditComponent,
     MessageItemComponent,
-    MessagesEditComponent
+    DocumentItemComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
