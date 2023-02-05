@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Messages } from '../message.model';
 
 @Component({
@@ -7,15 +7,18 @@ import { Messages } from '../message.model';
   styleUrls: ['./message-item.component.css']
 })
 export class MessageItemComponent implements OnInit{
+  @Input () Message: Messages;
+  @Output () contactSelected = new EventEmitter<void>();
 
-  @Input() message = Messages;
-  messageSender!: string;
-  messagemsgText: string;
+  constructor (){ }
 
-  constructor(){}
-
-  ngOnInit() {
+  ngOnInit (){
 
   }
 
-}
+  //onSelected (){
+    //this.recipeSelected.emit();
+
+  }
+
+
